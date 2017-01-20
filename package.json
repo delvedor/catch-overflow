@@ -1,0 +1,23 @@
+{
+  "name": "catch-overflow",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delvedor/catch-overflow.git"
+  },
+  "keywords": [],
+  "author": "Tomas Della Vedova - @delvedor (http://delved.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delvedor/catch-overflow/issues"
+  },
+  "homepage": "https://github.com/delvedor/catch-overflow#readme",
+  "dependencies": {
+    "opener": "^1.4.2"
+  }
+}
