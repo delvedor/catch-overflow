@@ -15,7 +15,8 @@ const catch = require('catch-overflow')
 
 catch(function () {
   // your code here
-}, args) // args is an array of arguments you want to pass to you function
+}, [args], [context]) 
+// args is an array of arguments you want to pass to your function
 ```
 
 ## Contributing
