@@ -2,11 +2,14 @@
 
 const open = require('opener')
 
-function catchOverflow (func, args) {
+function catchOverflow (func, args, context) {
   try {
-    func.apply(null, args)
+    return func.apply(context, args)
   } catch (e) {
-    open('https://stackoverflow.com/search?q=' + encodeURIComponent(e))
+    if (process.env.NODE_ENV === 'development') {
+      open('https://stackoverflow.com/search?q=' + encodeURIComponent(e))
+    }
+    return e
   }
 }
 
